@@ -1,0 +1,45 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## About
+
+**Workita** is your AI Job Companion. It helps candidates navigate the job search and application process with intelligent, AI-powered recommendations at every stage.
+
+## Main Features
+
+- **Job Search** — Discover and explore job opportunities tailored to the user's profile and preferences.
+- **Application Tracking** — Keep track of all job applications and their status throughout the selection process.
+- **Interview Preparation** — AI-powered guidance to help candidates prepare for each stage of the interview process.
+
+## Technology Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | TypeScript |
+| Backend | Node.js |
+| Database | PostgreSQL |
+| AI Framework | Google Genkit (Google Gemini) |
+| Authentication | Google SSO (OAuth 2.0) |
+
+## Running the App
+
+Workita runs via Docker Compose and is accessible at:
+
+```
+http://localhost:8080
+```
+
+Start the app:
+
+```bash
+docker compose up --build
+```
+
+## Authentication
+
+Workita uses **Google SSO** for user registration and login, leveraging Google OAuth 2.0 for secure, seamless access.
+
+## AI Integration
+
+Workita uses the **Google Genkit** framework to integrate **Google Gemini** into the app, providing candidates with intelligent, contextual recommendations throughout their job search and application journey.
